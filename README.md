@@ -36,6 +36,10 @@ Create a `CredentialSettings.json` file in the root directory:
 
 ## Usage
 
+You can first use the Fiddler program to observe what POST request is sent to JIRA during a Tempo log recording. From this, you can see where and what JSON needs to be sent.
+
+![image](https://github.com/user-attachments/assets/b12f26f0-35c2-4442-8060-fd6a77aac7a3)
+
 ```python
 from tempo import CookieService, CredentialSettings
 
