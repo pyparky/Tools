@@ -76,7 +76,6 @@ class CookieService:
         options.add_argument('--disable-logging')
         options.add_argument('--log-level=3')
         options.add_argument('--output=/dev/null')
-        options.add_argument('--headless')  # Run in headless mode
         
         return webdriver.Chrome(service=Service(), options=options)
 
@@ -124,6 +123,7 @@ class CookieService:
 
     async def get_jira_cookies(self) -> None:
         driver = None
+
         try:
             driver = self._get_web_driver()
             wait = WebDriverWait(driver, PAGE_LOAD_TIMEOUT)

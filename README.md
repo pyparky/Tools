@@ -6,7 +6,6 @@ A Python-based tool for automating Jira Tempo worklog entries using Selenium and
 
 - Automated cookie-based authentication
 - Async HTTP requests for better performance
-- Headless browser operation
 - Persistent credential storage
 
 ## Requirements
